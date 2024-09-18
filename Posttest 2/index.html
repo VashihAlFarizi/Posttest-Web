@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukti Pemesanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" colspan="4" align="center">
+        <div class="thank-you">Terima kasih atas pembelian Anda!</div>
+        <img src="logo-resto.jpeg" alt="Logo Resto"><br>
+                <h2>Bukti Pemesanan</h2>
+        <div class="Bukti-Pemesanan">
+        </div>
+
+        <div class="billing-info">
+            <p>
+                <p><b>Nama Pemesan :</b> Rasyid</p>
+                <p><b>Nama Pelayan :</b> Vashih</p>
+                <p><b>Alamat Pesanan :</b> Jl. Salehidin No. 16, Kota Tenggarong</p>
+                <b>Tanggal Pemesanan: <input type="date" name="tanggal"></b>
+            </p>  
+        </div>
+
+        <div class="order-summary">
+            <h3>Rincian Pesanan</h3>
+            <table class="summary-table">
+                <tr>
+                    <th>Nama Menu</th>
+                    <th>Jumlah</th>
+                    <th>Harga Satuan</th>
+                    <th>Total Harga</th>
+                </tr>
+                <tr>
+                    <td><img src="nasi-goreng.jpeg" alt="Nasi Goreng"> Nasi Goreng Spesial</td>
+                    <td>1 Porsi</td>
+                    <td>Rp 25.000</td>
+                    <td>Rp 25.000</td>
+                </tr>
+                <tr>
+                    <td><img src="es-teh-manis.jpeg" alt="Es Teh Manis"> Es Teh Manis</td>
+                    <td>1 Gelas</td>
+                    <td>Rp 5.000</td>
+                    <td>Rp 5.000</td>
+                </tr>
+                <tr class="subtotal">
+                    <td colspan="3" align="right">Subtotal</td>
+                    <td>Rp 30.000</td>
+                </tr>
+                <tr class="tax">
+                    <td colspan="3" align="right">Pajak</td>
+                    <td>Rp 2.000</td>
+                </tr>
+                <tr class="total">
+                    <td colspan="3" align="right">Total</td>
+                    <td>Rp 32.000</td>
+                </tr>
+            </table>
+
+        <p class="track-button">
+            <tr>
+                <td colspan="4" rowspan=""><b>Metode Pembayaran: </b><br>
+                    <input type="radio" name="pembayaran" value="BCA"> Bank BCA
+                    <input type="radio" name="pembayaran" value="BRI"> Bank BRI
+                    <input type="radio" name="pembayaran" value="OVO"> OVO
+                    <input type="radio" name="pembayaran" value="GoPay"> GoPay
+                </td>
+            </tr>
+        </p>
+        <div class="additional-info">
+            <p>
+                <ul>
+                    <li>Nama: Vashih Al Farizi</li>
+                    <li>NIM: 2309106076</li>
+                    <li>Praktikum Web: <a href="https://classroom.google.com/c/NzEwMjM1Mjg5MTM4/a/NzA2MTI4OTQ1MTg1/details">posstest2</a></li>
+                </ul>
+            </p>
+        </div>
+              
+</body>
+</html>
