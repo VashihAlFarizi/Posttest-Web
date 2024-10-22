@@ -1,0 +1,330 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-container {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 4rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.welcome-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-learn-more {
+    background-color: white;
+    color: #4CAF50;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* daftar mod */
+.mod-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.mod-item {
+    display: flex;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    align-items: center;
+}
+
+.mod-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    margin-right: 1rem;
+}
+
+.mod-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.mod-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.mod-author {
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+.mod-description {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.mod-details {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+.mod-details span {
+    margin-right: 10px;
+}
+
+/* light mode */
+body.light-mode {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.light-mode .mod-item {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+body.light-mode .mod-item:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+.light-mode .mod-author {
+    color: #555;
+}
+
+.light-mode .mod-details {
+    color: #666;
+}
+
+/* dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .mod-item {
+    background-color: #222;
+    color: white;
+    border: none;
+}
+
+body.dark-mode .mod-item:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.dark-mode .mod-author {
+    color: #999;
+}
+
+.dark-mode .mod-details {
+    color: #ccc;
+}
+
+/* Navbar Light Mode */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+
+}
+
+/* Tombol Dark Mode */
+.dark-mode-btn {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dark-mode-btn:hover {
+    background-color: #666;
+}
+
+body.dark-mode {
+    background-color: #353333;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #222;
+}
+
+.dark-mode .nav-links a {
+    color: white;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+.login-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Form Styles */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto;
+}
+.form-container label, .form-container input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form-container input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+    background-color: #218838;
+}
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+.result table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.result table, .result th, .result td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+/* Light Mode for Form */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Dark Mode for Form */
+.dark-mode .form-container {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode input {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+.dark-mode input[type="submit"] {
+    background-color: #28a745;
+}
+
+.dark-mode input[type="submit"]:hover {
+    background-color: #218838;
+}
